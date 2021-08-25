@@ -1,0 +1,19 @@
+.main {
+  margin: 0 15%;
+}
+
+.main h1 {
+  font-size: 48px;
+}
+
+.main-wrapper {
+  background-image: url("images/header-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
