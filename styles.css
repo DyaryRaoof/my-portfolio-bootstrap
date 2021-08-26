@@ -7,10 +7,16 @@
 }
 
 .main-wrapper {
-  background-image: url("images/header-bg-desktop.png");
-  background-repeat: no-repeat;
+  background: #fff url(../images/bg-header-desktop.svg) no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer-wrapper {
+  background: #6070ff url(../images/bg-footer-desktop.svg) 40% 70% no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0 10% 0;
 }
 
 .social-icon {
