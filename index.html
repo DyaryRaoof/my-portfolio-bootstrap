@@ -96,16 +96,47 @@
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <div class="modal-header d-block">
+                            <div class="d-flex justify-content-between">
+                              <h5 class="modal-title" id="exampleModalLabel">Tonic</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                          </div>
+                          <ul class="d-flex list-unstyled modal-title">
+                            <li>CANOPY</li>
+                            <li><i class="bi bi-dot"></i></li>
+                            <li>Back End Dev</li>
+                            <li><i class="bi bi-dot"></i></li>
+                            <li>2015</li>
+                          </ul>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <img class="img-fluid" src="images/modal-desktop.png" alt="tonic">
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="row">
+                              <div class="col-sm-7">
+                                <p>
+                                  Lorem ipsum dolor, 
+                                  sit amet consectetur adipisicing elit.
+                                  Aperiam corporis autem, beatae quas iste,
+                                  reprehenderit laudantium sed esse omnis ipsam repudiandae quibusdam quod dict,
+                                  sequi rem eaque? Inventore, autem earum!
+                                </p>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="pt-3 pb-5">
+                                  <span class="badge bg-primary">html</span>
+                                  <span class="badge bg-primary">css</span>
+                                  <span class="badge bg-primary">javaScript</span>
+                                </div>
+                                <div class="d-flex">
+                                  <button type="button" class="btn btn-outline-primary me-2" style="font-size: 10px;">See Live</button>
+                                  <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">See Source</button>
+                                </div>
+                              </div>
+                            </div>
+                           
                           </div>
                         </div>
                       </div>
@@ -120,7 +151,7 @@
               <div class="row g-0">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <h1 class="card-title">Tonic</h1>
+                    <h1 class="card-title">Multi-Post Stories</h1>
                     <ul class="d-flex list-unstyled">
                       <li>CANOPY</li>
                       <li><i class="bi bi-dot"></i></li>
@@ -128,13 +159,16 @@
                       <li><i class="bi bi-dot"></i></li>
                       <li>2015</li>
                     </ul>
-                    <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p class="card-text">
+                      A daily selection of privately personalized reads;
+                      no accounts or sign-ups required.
+                     </p>
                     <div class="pt-3 pb-5 pr-3">
                       <span class="badge bg-primary">html</span>
                       <span class="badge bg-primary">css</span>
                       <span class="badge bg-primary">javaScript</span>
                     </div>
-                    <button type="button" class="btn btn-outline-primary d-block">See Project</button>
+                    <button type="button" class="btn btn-outline-primary d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -165,7 +199,7 @@
                       <span class="badge bg-primary">css</span>
                       <span class="badge bg-primary">javaScript</span>
                     </div>
-                    <button type="button" class="btn btn-outline-primary d-block">See Project</button>
+                    <button type="button" class="btn btn-outline-primary d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
                   </div>
                 </div>
               </div>
@@ -176,7 +210,7 @@
               <div class="row g-0">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <h1 class="card-title">Tonic</h1>
+                    <h1 class="card-title">Multi-Post Stories</h1>
                     <ul class="d-flex list-unstyled">
                       <li>CANOPY</li>
                       <li><i class="bi bi-dot"></i></li>
@@ -190,7 +224,7 @@
                       <span class="badge bg-primary">css</span>
                       <span class="badge bg-primary">javaScript</span>
                     </div>
-                    <button type="button" class="btn btn-outline-primary d-block">See Project</button>
+                    <button type="button" class="btn btn-outline-primary d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -274,21 +308,26 @@
             </div>
         </section>
         <footer class="footer-wrapper">
-          <div class="d-flex align-items-center justify-content-center text-center">
-            <form class="form-group row w-25 text-white">
-              <h2>Contact Me</h2>
-              <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-              <div class="mb-3 col-xs-4">
-                <input type="text" class="form-control" id="usr-name" aria-label="Type your name" required maxlength="30" placeholder="Your name">
+          <div class="container">
+            <form class="form-group row text-white d-flex align-items-center justify-content-center text-center">
+              <div class="col-sm-6 col-10">
+                <h2>Contact Me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                <div class="mb-3 col-xs-4">
+                  <input type="text" class="form-control" id="usr-name" aria-label="Type your name" required maxlength="30" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="usr-email" aria-label="Type your email" required placeholder="name@mail.com">
+                </div>
+                <div class="mb-3">
+                  <textarea type="text" class="form-control" id="usr-comment" aria-label="Write your message" required placeholder="Write your message here" required
+                  aria-label="Write your message" maxlength="500"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary bg-white mx-auto col-sm-offset-2">
+                  Get In Touch
+                </button>  
               </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="usr-email" aria-label="Type your email" required placeholder="name@mail.com">
-              </div>
-              <div class="mb-3">
-                <textarea type="text" class="form-control" id="usr-comment" aria-label="Write your message" required placeholder="Write your message here" required
-                aria-label="Write your message" maxlength="500"></textarea>
-              </div>
-              <button type="submit" class="btn btn-outline-primary bg-white d-block mx-auto w-25">Get In Touch</button>
+              
             </form>
           </div>
         </footer>
